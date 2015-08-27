@@ -11,11 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main.templates');
-});
+Route::get('/', [
+    'uses' => 'HomeController@index',
+    'as' => 'home'
+]);
 
 Route::get('language', 'HomeController@language');
+
+Route::get('create', 'HomeController@create');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');

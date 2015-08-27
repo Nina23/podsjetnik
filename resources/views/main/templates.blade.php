@@ -12,8 +12,8 @@
 
 <body>
 
-    <div class="brand">{{ trans('site.title') }}</div>
-    <div class="address-bar">{{ trans('site.sub-title') }}</div>
+    <div class="brand">{{ trans('sajt/site.title') }}</div>
+    <div class="address-bar">{{ trans('sajt/site.sub-title') }}</div>
 
 
     <nav class="navbar navbar-default">
@@ -25,19 +25,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">{{ trans('site.home') }}</a>
+          <a class="navbar-brand" href="#">{{ trans('sajt/site.home') }}</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">{{ trans('site.profile') }} <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">{{ trans('site.search') }}</a></li>
+            <li><a href="#">{{ trans('sajt/site.profile') }} <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">{{ trans('sajt/site.search') }}</a></li>
 
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">{{ trans('site.logout') }}</a></li>
-            <li><a href="{!! url('language') !!}"> Jezik </a></li>
+            <li><a href="#">{!! trans('sajt/site.logout') !!}</a></li>
+            <li><a href="{{ url('language') }}"> Jezik </a></li>
           </ul>
         </div>
       </div>

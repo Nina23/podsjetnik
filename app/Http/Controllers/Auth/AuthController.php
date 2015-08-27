@@ -23,10 +23,10 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
     //ako je prosao uspjesno
-    protected $redirectPath = '/dashboard';
+    protected $redirectPath = '/';
 
     //ako nije prosao registraciju
-    protected $loginPath = '/';
+    protected $loginPath = 'auth/register';
     /**
      * Create a new authentication controller instance.
      *
@@ -62,7 +62,7 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
