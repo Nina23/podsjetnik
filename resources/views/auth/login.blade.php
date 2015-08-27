@@ -1,6 +1,6 @@
 <!-- resources/views/auth/login.blade.php -->
 
-<form method="POST" action="GitPodsjetnik/public/auth/login">
+<form method="POST" action="login">
     {!! csrf_field() !!}
 
     <div>
