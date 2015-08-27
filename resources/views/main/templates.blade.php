@@ -37,7 +37,7 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">{{ trans('site.logout') }}</a></li>
-            <li><a href="#"> Jezik </a></li>
+            <li><a href="{!! url('language') !!}"> Jezik </a></li>
           </ul>
         </div>
       </div>
