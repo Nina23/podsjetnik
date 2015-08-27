@@ -6203,7 +6203,8 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
 .well {
     min-height: 20px;
     padding: 19px;
-    margin-bottom: 20px;
+    margin-top: 30%;
+    margin-left: 20%;
     background-color: #4e5d6c;
     border: 1px solid transparent;
     border-radius: 0;
