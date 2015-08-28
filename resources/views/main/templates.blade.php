@@ -43,6 +43,19 @@
       </div>
     </nav>
 
+
+    <div id="page-wrapper">
+
+                    <div class="container-fluid">
+
+                        @yield('main')
+
+                    </div>
+                    <!-- /.container-fluid -->
+
+    </div>
+
+
     {!! HTML::script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') !!}
     {!! HTML::script('js/bootstrap.min.js') !!}
 
