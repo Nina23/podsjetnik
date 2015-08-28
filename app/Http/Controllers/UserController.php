@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App;
-use App\Jobs\PromjenaJezika;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,29 +16,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('main.templates');
+        //
     }
-
 
     /**
      * Show the form for creating a new resource.
      *
      * @return Response
      */
-
-    public function language(
-        PromjenaJezika $changeLocale)
-    {
-        $this->dispatch($changeLocale);
-        return redirect()->back();
-    }
-
     public function create()
     {
-        if(session('locale')=='sr')
-            print 'srpski';
-        else
-            print 'engleski';
+        //
     }
 
     /**
@@ -62,7 +48,7 @@ class HomeController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -74,11 +60,6 @@ class HomeController extends Controller
     public function edit($id)
     {
         //
-    }
-
-    public function dodavanje()
-    {
-        return view('main.dodavanje');
     }
 
     /**

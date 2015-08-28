@@ -23,11 +23,7 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
     //ako je prosao uspjesno
-<<<<<<< HEAD
     protected $redirectPath = '/';
-=======
-    protected $redirectPath = 'login';
->>>>>>> 62ea4545e884bb367671e5b5d684d9436cad7f44
 
     //ako nije prosao registraciju
     protected $loginPath = 'auth/register';
@@ -52,7 +48,6 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);

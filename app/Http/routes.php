@@ -9,22 +9,19 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
+*/
 
-
-<<<<<<< HEAD
 Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home'
 ]);
 
+Route::get('/dodavanje', [
+    'uses' => 'HomeController@dodavanje',
+    'as' => 'home'
+]);
+
 Route::get('language', 'HomeController@language');
-=======
-Route::get('/', function () {
-    return view('main.templates');
-});
-*/
-//Route::get('language', 'HomeController@language');
->>>>>>> 62ea4545e884bb367671e5b5d684d9436cad7f44
 
 Route::get('create', 'HomeController@create');
 
